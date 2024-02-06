@@ -1,0 +1,185 @@
+Notebook[{
+Cell[StyleData[
+StyleDefinitions -> 
+ "ReverseColor.nb"],ExpressionUUID->"174137a6-9bd8-b341-b7f9-eef5dc688aee"],
+
+Cell[StyleData["Notebook"],
+ CellBracketOptions->{"Color"->GrayLevel[0.498039],
+ "HoverColor"->GrayLevel[0.815686]},
+ AutoStyleOptions->{
+ "CommentStyle"->{
+  FontColor -> RGBColor[0.384, 0.592, 0.633], FontWeight -> Plain, 
+   ShowAutoStyles -> False, ShowSyntaxStyles -> False, AutoNumberFormatting -> 
+   False, TranslationOptions -> {"Enabled" -> False}},
+ "ExcessArgumentStyle"->{
+  FontColor -> RGBColor[1., 0.3333333333333333, 0.3333333333333333]},
+ "FunctionLocalVariableStyle"->{FontColor -> RGBColor[0.235, 0.49, 1.]},
+ "MissingArgumentStyle"->{
+  FontColor -> RGBColor[1., 0.3333333333333333, 0.3333333333333333]},
+ "PatternVariableStyle"->{
+  FontColor -> RGBColor[0.474, 0.67, 1.], FontSlant -> "Italic"},
+ "StringStyle"->{
+  FontColor -> RGBColor[0.208, 0.733, 0.71], ShowAutoStyles -> False, 
+   ShowSyntaxStyles -> False, AutoNumberFormatting -> False, 
+   TranslationOptions -> {"Enabled" -> False}},
+ "SymbolContextStyles"->{
+  "System`" -> {FontColor -> RGBColor[0.2, 0.671, 0.96]}, 
+   "Global`" -> {
+    FontColor -> RGBColor[0.4, 0.7764705882352941, 0.9274509803921568]}, 
+   Automatic -> {}},
+ "UndefinedSymbolStyle"->{FontColor -> RGBColor[0.63, 0.63, 0.63]}},
+ CodeAssistOptions->{
+ "HeadHighlightStyle"->{Background -> RGBColor[0.447, 0.447, 0.447]},
+ "MatchHighlightStyle"->{
+  Background -> 
+   RGBColor[0.6843137254901961, 0.4470588235294118, 0.4431372549019608]}},
+ MenuSortingValue->10000,
+ FontFamily->"Arial",
+ FontSize->14,
+ FontWeight->"Normal",
+ FontSlant->"Plain",
+ FontTracking->"Condensed",
+ FontVariations->{"StrikeThrough"->False,
+ "Underline"->False},
+ FontColor->GrayLevel[1.],
+ Background->GrayLevel[0.],
+ AxisBoxOptions->{TicksStyle->GrayLevel[0.8]},
+ GraphicsBoxOptions->{GridLinesStyle->GrayLevel[0.8],
+ TicksStyle->GrayLevel[0.8]},
+ Graphics3DBoxOptions->{TicksStyle->GrayLevel[0.8]},
+ Axis3DBoxOptions->{
+ TicksStyle->GrayLevel[
+  0.8]},ExpressionUUID->"641b1565-36d0-1d47-93ac-59b2db04bb0c"],
+
+Cell[StyleData["Text"],
+ FontColor->GrayLevel[
+  1.],ExpressionUUID->"2c0019f6-150b-ca40-824b-67649e27d360"],
+
+Cell[StyleData["Item"],
+ CellDingbat->StyleBox["\[FilledSmallSquare]", Alignment -> Baseline, 
+   RGBColor[
+   0.18, 0.63, 0.808]],ExpressionUUID->"70eefc05-3efd-c744-a221-5e662bee1da8"],
+
+Cell[StyleData["Subitem"],
+ CellDingbat->StyleBox["\[FilledSmallSquare]", Alignment -> Baseline, 
+   RGBColor[
+   0.18, 0.63, 0.808]],ExpressionUUID->"9b2c03ac-b467-f547-a0e3-3aea0ce4d290"],
+
+Cell[StyleData["Subchapter"],
+ CellDingbat->StyleBox["\[FilledSmallSquare]", Alignment -> Baseline, 
+   RGBColor[0.3, 0.7, 0.9]],
+ FontColor->RGBColor[
+  0.65, 0.65, 0.65],ExpressionUUID->"c664ab72-7c6e-494b-ba94-ace367d12554"],
+
+Cell[StyleData["Title"],
+ FontColor->RGBColor[
+  0, 1, 1],ExpressionUUID->"1a5cb856-db49-df45-92f7-b0cc600d0d7b"],
+
+Cell[StyleData["Subtitle"],
+ FontColor->RGBColor[
+  0.075, 0.773, 0.808],ExpressionUUID->"3214ef4d-3e1b-c44e-9ea0-cc18633275d1"],
+
+Cell[StyleData["Chapter"],ExpressionUUID->"0c3e4a0c-bc09-434d-9ca1-\
+e48575b294e8"],
+
+Cell[StyleData["Section"],
+ FontColor->RGBColor[
+  0.125, 0.784, 0.816],ExpressionUUID->"9a96c45f-1360-f545-a8c6-a02b1e6cf32a"],
+
+Cell[StyleData["Subsubsection"],
+ FontColor->RGBColor[
+  0.718, 0.929, 0.941],ExpressionUUID->"73d51c84-5f6c-7b4a-9506-025b882dc9cd"],
+
+Cell[StyleData["CodeText"],
+ FontColor->GrayLevel[
+  0.706],ExpressionUUID->"08edaa61-189c-c74b-860b-3e4f90d3998b"],
+
+Cell[StyleData["Code"],
+ CellFrame->True,
+ CellMargins->{{66, 10}, {5, 5}},
+ CellFrameColor->GrayLevel[0.545],
+ Background->GrayLevel[
+  0.157],ExpressionUUID->"403317bb-89f6-d64f-8e90-a04cac8df035"],
+
+Cell[StyleData["Input"],
+ CellFrame->True,
+ CellFrameColor->GrayLevel[0.345],
+ CellFrameLabelMargins->
+  6,ExpressionUUID->"1ff185e8-374a-b841-adb8-6fc1c0327944"],
+
+Cell[StyleData["NaturalLanguageInput"],
+ CellDingbat->PaneBox[
+   ButtonBox["\[FreeformPrompt]", ButtonFunction :> (SelectionMove[
+       ParentCell[
+        EvaluationCell[]], All, Expression]; 
+     FrontEndTokenExecute["EvaluateCells"]), Evaluator -> Automatic, 
+    BaselinePosition -> Baseline, Appearance -> None, FrameMargins -> 0, 
+    ImageMargins -> 0, ContentPadding -> False, BaseStyle -> {}, 
+    DefaultBaseStyle -> {}, Tooltip -> DynamicBox[
+      ToBoxes[
+       FrontEndResource["WAStrings", "DoQueryTooltip"]]]], 
+   BaselinePosition -> (Center -> Center), 
+   BaseStyle -> {
+    FontSize -> 10, FontColor -> RGBColor[0.3, 0.7, 0.9], FontFamily -> 
+     Dynamic[
+       AbsoluteCurrentValue[{StyleHints, "CodeFont"}]]}],
+ CellFrameMargins->{{21, 7}, {3, 4}},
+ CellFrameColor->RGBColor[0., 0.949, 1.],
+ FontColor->GrayLevel[0.],
+ Background->GrayLevel[
+  1.],ExpressionUUID->"2ae7f7cf-61d6-604b-aa69-201a60dd5c18"],
+
+Cell[StyleData["ExternalLanguage"],
+ GroupOpenerColor->GrayLevel[0.855],
+ FontColor->GrayLevel[1.],
+ Background->GrayLevel[
+  0.],ExpressionUUID->"8a28b7d9-5a68-3846-bff5-c1f24a0b5645"],
+
+Cell[StyleData["WolframAlphaShort"],
+ CellFrameLabels->{{
+    Cell[
+     BoxData[
+      StyleBox[
+      "\[FreeformPrompt]", FontColor -> 
+       RGBColor[0.36875, 0.633594, 0.90390625]]]], None}, {None, None}},
+ MenuSortingValue->10000,
+ FontColor->RGBColor[
+  0.663, 0.78, 0.776],ExpressionUUID->"81a15e36-589f-7a44-ab5d-57dde75c9695"],
+
+Cell[StyleData["WolframAlphaShortInput"],
+ CellFrameLabels->{{
+    Cell[
+     BoxData[
+      StyleBox[
+      "\[FreeformPrompt]", FontColor -> 
+       RGBColor[0.26875, 0.633594, 0.90390625]]], CellBaseline -> Baseline], 
+    None}, {None, None}},
+ MenuSortingValue->10000,
+ FontFamily->"Arial",
+ FontSize->12,
+ FontWeight->"Bold",
+ FontSlant->"Plain",
+ FontTracking->"Plain",
+ FontVariations->{"StrikeThrough"->False,
+ "Underline"->False},
+ FontColor->RGBColor[
+  0.651, 0.78, 0.792],ExpressionUUID->"c5e8af5d-0338-7c43-be13-d1ca2ccca8c0"],
+
+Cell[StyleData["WolframAlphaLong"],
+ CellDingbat->"\\[FilledSquare]",
+ CellFrameLabels->{{
+    Cell[
+     BoxData[
+      StyleBox[
+      "\[WolframAlphaPrompt]", FontColor -> 
+       RGBColor[0.2, 0.6375, 0.928906]]]], None}, {None, None}},
+ MenuSortingValue->10000,
+ FontColor->RGBColor[
+  0.455, 0.945, 0.988],ExpressionUUID->"8fcbe675-620d-a34f-a55a-32f65a3854d4"]
+},
+WindowMargins->{{Automatic, 76.5}, {Automatic, 38.25}},
+FrontEndVersion->"14.0 for Microsoft Windows (64-bit) (December 12, 2023)",
+StyleDefinitions->"PrivateStylesheetFormatting.nb",
+ExpressionUUID->"e61b09ae-f4d5-114e-b4c3-1c528c307045"
+]
+
